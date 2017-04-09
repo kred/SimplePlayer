@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>PlaybackPage.qml</file>
+        <file>PlaybackPageForm.ui.qml</file>
+        <file>Images/next.png</file>
+        <file>Images/play.png</file>
+        <file>Images/prev.png</file>
+        <file>Images/pause.png</file>
+        <file>FilesPage.qml</file>
+        <file>FilesPageForm.ui.qml</file>
+        <file>FilesViewDelegate.qml</file>
+        <file>FilesViewDelegateForm.ui.qml</file>
+        <file>SettingsPage.qml</file>
+        <file>SettingsPageForm.ui.qml</file>
+    </qresource>
+</RCC>
