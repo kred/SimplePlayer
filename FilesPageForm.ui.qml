@@ -80,7 +80,7 @@ Item {
                 }
             }
 
-            Button {
+            PushButton {
                 id: scanButton
                 text: qsTr("Scan")
                 Layout.preferredHeight: 48

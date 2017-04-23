@@ -8,6 +8,9 @@ Item {
     id: settingsPage
     width: 800
     property alias leftFrame: leftFrame
+    property alias jackButton: jackButton
+    property alias btButton: btButton
+    property alias scanButton: scanButton
 
     Row {
         id: controlButtonsRow
@@ -56,7 +59,6 @@ Item {
         }
     }
 
-
     Rectangle {
         id: background1
         x: 758
@@ -101,7 +103,6 @@ Item {
         RadioButton {
             id: jackButton
             text: qsTr("Jack output")
-            ButtonGroup.group: radioGroup
             checked: true
             Layout.fillWidth: true
             Layout.alignment: Qt.AlignLeft | Qt.AlignTop
@@ -116,7 +117,6 @@ Item {
             RadioButton {
                 id: btButton
                 text: qsTr("Bluetooth device")
-                ButtonGroup.group: radioGroup
                 Layout.columnSpan: 1
                 Layout.fillWidth: true
                 Layout.maximumHeight: 50
@@ -124,19 +124,11 @@ Item {
                 Layout.preferredHeight: 50
             }
 
-            Button {
+            PushButton {
                 id: scanButton
-                text: qsTr("Scan")
+                text: qsTr("Discover")
                 Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
-                visible: btButton.checked
             }
         }
-
-        ButtonGroup {
-            id: radioGroup
-        }
-
     }
-
-
 }

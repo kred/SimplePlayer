@@ -137,63 +137,33 @@ Item {
                 Layout.fillWidth: true
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
 
-                Button {
+                MediaButton {
                     id: prevButton
                     width: 50
                     height: 50
-                    text: qsTr("")
                     Layout.maximumHeight: 50
                     Layout.maximumWidth: 50
-
-                    Image {
-                        id: prevButtonImage
-                        width: 30
-                        height: 30
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        anchors.verticalCenter: parent.verticalCenter
-                        fillMode: Image.PreserveAspectFit
-                        source: "Images/prev.png"
-                    }
+                    type: "prev"
                 }
 
-                Button {
+                MediaButton {
                     id: playButton
                     width: 50
                     height: 50
-                    text: qsTr("")
                     Layout.maximumHeight: 50
                     Layout.maximumWidth: 50
                     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-
-                    Image {
-                        id: playButtonImage
-                        width: 30
-                        height: 30
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        fillMode: Image.PreserveAspectFit
-                        source: mediaPlayer.playbackState == MediaPlayer.PlayingState ? "Images/pause.png" : "Images/play.png"
-                        anchors.verticalCenter: parent.verticalCenter
-                    }
+                    type: mediaPlayer.playbackState == MediaPlayer.PlayingState ? "pause" : "play"
                 }
 
-                Button {
+                MediaButton {
                     id: nextButton
                     width: 50
                     height: 50
-                    text: qsTr("")
                     Layout.maximumHeight: 50
                     Layout.maximumWidth: 50
                     Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
-
-                    Image {
-                        id: nextButtonImage
-                        width: 30
-                        height: 30
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        fillMode: Image.PreserveAspectFit
-                        source: "Images/next.png"
-                        anchors.verticalCenter: parent.verticalCenter
-                    }
+                    type: "next"
                 }
             }
 

@@ -13,5 +13,7 @@
         <file>FilesViewDelegateForm.ui.qml</file>
         <file>SettingsPage.qml</file>
         <file>SettingsPageForm.ui.qml</file>
+        <file>MediaButton.qml</file>
+        <file>PushButton.qml</file>
     </qresource>
 </RCC>
